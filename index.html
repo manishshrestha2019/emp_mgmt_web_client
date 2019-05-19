@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Employee Management Web Client</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-    
+<body>   
+  <div class="container">
+    <input type="text" placeholder="Enter Username" name="uname" id="username" required>
+    <input id="password" type="password" placeholder="Enter Password" name="psw" required>      
+    <button id="login" type="submit">Login</button>
+  </div>
+
+       
 </body>
+<script>
+  const button=document.getElementById('login');
+  button.addEventListener('click',function onClick(e){
+    const usernameNode=document.getElementById('username');
+    const passwordNode=document.getElementById('password');
+
+    const usernameValue=usernameNode.value;
+    const passwordValue=passwordNode.value;
+    console.log(username.value)
+    console.log(password.value)
+
+    //retrieve password
+    //retrieve username
+    //send a request to express server(fetch)
+    //validate username and password
+    //redirect to dash if password match
+    //request fetch
+    //console.log('button')
+  })
+
+
+</script>
 </html>
